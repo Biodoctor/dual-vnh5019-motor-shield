@@ -5,14 +5,14 @@
 DualVNH5019MotorShield::DualVNH5019MotorShield()
 {
   //Pin map
-  _INA1 = 2;
+  _INA1 = 9;  //Remapped output from pin 2 to pin 9
   _INB1 = 4;
-  _EN1DIAG1 = 6;
-  _CS1 = A0; 
+  _EN1DIAG1 = A1;  //Remapped from pin 6 to pin A1
+  _CS1 = A3;  //Remapped from A0 to A3
   _INA2 = 7;
   _INB2 = 8;
-  _EN2DIAG2 = 12;
-  _CS2 = A1;
+  _EN2DIAG2 = A0;  //Enable motor 2 remapped from pin 12 to pin A0
+  _CS2 = A2;      //Remapped from A1 to A2
 }
 
 DualVNH5019MotorShield::DualVNH5019MotorShield(unsigned char INA1, unsigned char INB1, unsigned char EN1DIAG1, unsigned char CS1, 
